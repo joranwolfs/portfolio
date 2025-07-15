@@ -1,0 +1,32 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Wolf head shape -->
+    <path d="M15 3
+             L7 10
+             L5 18
+             L8 24
+             L15 27
+             L22 24
+             L25 18
+             L23 10
+             L15 3Z" 
+          stroke="currentColor" 
+          fill="none"
+          stroke-width="2"
+          stroke-linejoin="round"/>
+    
+    <!-- Ears -->
+    <path d="M7 10L4 8M23 10L26 8" 
+          stroke="currentColor" 
+          stroke-width="2" 
+          stroke-linecap="round"/>
+    
+    <!-- Eyes -->
+    <circle cx="11" cy="15" r="1.5" fill="currentColor"/>
+    <circle cx="19" cy="15" r="1.5" fill="currentColor"/>
+    
+    <!-- Nose -->
+    <path d="M15 18L13 20H17L15 18" 
+          fill="currentColor" 
+          stroke="currentColor" 
+          stroke-width="1"/>
+</svg> 

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joran Wolfs - Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="light-mode">
+    <!-- Mobile Message -->
+    <div class="mobile-message">
+        <p>Deze website is helaas nog niet beschikbaar op telefoon</p>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <!-- Wolf head shape -->
+                    <path d="M15 3
+                             L7 10
+                             L5 18
+                             L8 24
+                             L15 27
+                             L22 24
+                             L25 18
+                             L23 10
+                             L15 3Z" 
+                          stroke="currentColor" 
+                          fill="none"
+                          stroke-width="2"
+                          stroke-linejoin="round"/>
+                    
+                    <!-- Ears -->
+                    <path d="M7 10L4 8M23 10L26 8" 
+                          stroke="currentColor" 
+                          stroke-width="2" 
+                          stroke-linecap="round"/>
+                    
+                    <!-- Eyes -->
+                    <circle cx="11" cy="15" r="1.5" fill="currentColor"/>
+                    <circle cx="19" cy="15" r="1.5" fill="currentColor"/>
+                    
+                    <!-- Nose -->
+                    <path d="M15 18L13 20H17L15 18" 
+                          fill="currentColor" 
+                          stroke="currentColor" 
+                          stroke-width="1"/>
+                </svg>
+            </div>
+            <div class="nav-links">
+                <a href="#about">
+                    <span>A</span><span>B</span><span>O</span><span>U</span><span>T</span>
+                </a>
+                <a href="#projects">
+                    <span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span><span>S</span>
+                </a>
+                <a href="#contact">
+                    <span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/wolfsjoran" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/joran-wolfs-275221349/.nl" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="mega-text">
+                <span>Joran</span>
+                <span>Wolfs</span>
+            </h1>
+            <div class="scrolling-text">
+                <div class="text-track">
+                    <span>Student</span>
+                    <span class="separator">×</span>
+                    <span>Creative</span>
+                    <span class="separator">×</span>
+                    <span>Developer</span>
+                    <span class="separator">×</span>
+                    <span>Designer</span>
+                    <span class="separator">×</span>
+                    <span>Student</span>
+                    <span class="separator">×</span>
+                    <span>Creative</span>
+                    <span class="separator">×</span>
+                    <span>Developer</span>
+                    <span class="separator">×</span>
+                    <span>Designer</span>
+                    <span class="separator">×</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="tab-buttons">
+                <button class="tab-btn" data-tab="hobbies">Hobbies</button>
+                <button class="tab-btn active" data-tab="about">About me</button>
+                <button class="tab-btn" data-tab="skills">Skills</button>
+                
+            </div>
+            
+            <div class="tab-content">
+                <!-- About Me Tab -->
+                <div class="tab-pane active" id="about-content">
+                    <h1 class="about-title animate-on-scroll">
+                        <span>A</span>
+                        <span>b</span>
+                        <span>o</span>
+                        <span>u</span>
+                        <span>t</span>
+                        <span>&nbsp;</span>
+                        <span>m</span>
+                        <span>e</span>
+                    </h1>
+                    <div class="about-content animate-on-scroll">
+                        <div class="about-image-container animate-on-scroll">
+                            <div class="location-tag animate-on-scroll">rotterdam | netherlands | 51.9225° N, 4.4792° E</div>
+                            <div class="about-image">
+                                <img src="assets/Image.jpg" alt="Joran Wolfs">
+                            </div>
+                            <div class="name-tag animate-on-scroll">
+                                <span>j</span>
+                                <span>o</span>
+                                <span>r</span>
+                                <span>a</span>
+                                <span>n</span>
+                                <br>
+                                <span>w</span>
+                                <span>o</span>
+                                <span>l</span>
+                                <span>f</span>
+                                <span>s</span>
+                            </div>
+                        </div>
+                        <div class="about-text animate-on-scroll">
+                            <h2>Hi, I'm Joran,</h2>
+                            <p>I am a software development student at Grafisch Lyceum Rotterdam, specializing in Web Development and UI/UX Design.</p>
+                            <p>I grew up around computers and game consoles, developing a fascination with how technology creates engaging experiences. The immersive quality of stepping into digital worlds inspired me to initially pursue software development, where I learned to appreciate structured, intentional spaces.</p>
+                            <p>While my journey began in software development, I eventually gravitated toward UI/UX design and coding, giving me a solid foundation to adapt my understanding of form and function to the digital space.</p>
+                            <p>I'd welcome the opportunity to connect and explore your ideas, and how we can get them to come alive.</p>
+                            <a href="#contact" class="contact-button">Get in touch.</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Tab -->
+                <div class="tab-pane" id="skills-content">
+                    <h1 class="about-title animate-on-scroll">
+                        <span>M</span>
+                        <span>y</span>
+                        <span>&nbsp;</span>
+                        <span>s</span>
+                        <span>k</span>
+                        <span>i</span>
+                        <span>l</span>
+                        <span>l</span>
+                        <span>s</span>
+                       
+                    </h1>
+                    <div class="about-content">
+                        <div class="about-image-container">
+                            <div class="location-tag">my toolkit</div>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <img src="assets/skills/cursor.png" alt="cursor" class="skill-logo">
+                                    <span class="skill-name">Cursor</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="assets/skills/ChatGPT.svg" alt="chat-gpt" class="skill-logo">
+                                    <span class="skill-name">Chat-gpt</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="assets/skills/figma.svg" alt="Figma" class="skill-logo">
+                                    <span class="skill-name">Figma</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="assets/skills/html.svg" alt="html 5" class="skill-logo">
+                                    <span class="skill-name">Html-5</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="assets/skills/php.svg" alt="php" class="skill-logo">
+                                    <span class="skill-name">Php</span>
+                                </div>
+                                <div class="skill-item">
+                                    <img src="assets/skills/PhpStorm.svg" alt="php storm" class="skill-logo">
+                                    <span class="skill-name">php storm</span>
+                                </div>
+                            </div>
+                            <div class="name-tag">
+                                <span>S</span><span>k</span><span>i</span><span>l</span><span>l</span><span>s</span>
+                            </div>
+                        </div>
+                        <div class="about-text">
+                            <h2>My Expertise</h2>
+                            <p>I combine creativity and technical skills in AI and web development. With experience in AI tools like ChatGPT, I solve problems efficiently. In web design, I use Figma for intuitive interfaces and develop them with HTML, CSS, and JavaScript. On the back-end, I work with PHP and PHPStorm, delivering seamless and user-friendly solutions. Additionally, I use Cursor IDE, a modern development environment with AI-powered features, to boost productivity and streamline my coding workflow.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobbies Tab -->
+                <div class="tab-pane" id="hobbies-content">
+                    <h1 class="about-title animate-on-scroll">
+                        <span>M</span><span>y</span>
+                        <span>&nbsp;</span>
+                        <span>h</span><span>o</span><span>b</span><span>b</span><span>i</span><span>e</span><span>s</span>
+                    </h1>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h2>What I Love To Do</h2>
+                            <p>In my free time, I have a mix of hobbies that keep me both active and relaxed. I'm part of an amazing esports team called Infentent Pixels, where we compete in Counter-Strike. Gaming with my team is not just about winning it's about the camaraderie and passion we share for the game.</p>
+                            <p>When I'm not gaming, I love spending time with my friends outdoors. Whether it's exploring street art, walking around in Christmas hats during the holidays, or just having a good laugh together, it's always a blast.</p>
+                            <p>Another hobby I'm passionate about is playing guitar on my Jet 400. Music helps me unwind and express myself creatively. And of course, I always make time to relax and enjoy a good show. My favorite is Adventure Time, and I'm especially drawn to Marceline because of her tragic yet compelling backstory.</p>
+                            <p>Whether I'm gaming, making music, or watching my favorite series, I always make sure to enjoy every moment!</p>
+                        </div>
+                        <div class="about-image-container">
+                            <div class="location-tag">what i love</div>
+                            <div class="hobbies-gallery">
+                                <div class="gallery-container">
+                                    <div class="gallery-item">
+                                        <img src="assets/hobbies/hobby1.jpg" alt="Hobby 1" class="hobbies-image">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="assets/hobbies/hobby2.jpg" alt="Hobby 2" class="hobbies-image">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="assets/hobbies/hobby3.jpg" alt="Hobby 3" class="hobbies-image">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="assets/hobbies/hobby4.jpg" alt="Hobby 4" class="hobbies-image">
+                                    </div>
+                                    <!-- Add more gallery items as needed -->
+                                </div>
+                            </div>
+                            <div class="name-tag">
+                                <span>H</span><span>o</span><span>b</span><span>b</span><span>i</span><span>e</span><span>s</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-divider" style="background: linear-gradient(to bottom left, transparent 49.5%, #000000 50%);"></div>
+         
+    </section>
+   
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-divider" style="background: linear-gradient(to top left, transparent 49.5%, #000000 50%); top: 0;"></div>
+        <h1 class="projects-title">
+            <span data-text="P">P</span>
+            <span data-text="R">R</span>
+            <span data-text="O">O</span>
+            <span data-text="J">J</span>
+            <span data-text="E">E</span>
+            <span data-text="C">C</span>
+            <span data-text="T">T</span>
+            <span data-text="S">S</span>
+        </h1>
+        <div class="projects-carousel">
+            <button class="carousel-btn prev" aria-label="Previous project">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            
+            <div class="projects-container">
+                <div class="project-slide prev">
+                    <a href="https://100227.stu.sd-lab.nl/beroeps2/yume_ramen/testing5/logic/home.php" target="_blank" rel="noopener">
+                        <img src="assets/project1.png" alt="Yume Ramen Project">
+                        <div class="project-info">
+                            <div class="info-title">
+                                <h3>Yume Ramen</h3>
+                            </div>
+                            <div class="info-content">
+                                <p>A school project for a ramen restaurant delivery system. Features a complete custom frontend with HTML and CSS, and a robust PHP backend with MySQL database integration. Includes user authentication, order management, and admin dashboard.</p>
+                                <div class="tech-stack">
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                    <span>HTML/CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-slide current">
+                    <a href="http://kringloopwinkelhetgoededoel.nl/" target="_blank" rel="noopener">
+                        <img src="assets/project2.png" alt="Project 2">
+                        <div class="project-info">
+                            <div class="info-title">
+                                <h3>kringloopwinkelhetgoededoel</h3>
+                            </div>
+                            <div class="info-content">
+                                <p>A WordPress website for a local thrift store, featuring custom HTML and CSS to create a unique and user-friendly experience. The site includes product listings, store information, and contact details.</p>
+                                <div class="tech-stack">
+                                    <span>WordPress</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-slide next">
+                    <div class="work-in-progress-badge" style="position:absolute;top:20px;right:20px;background:#ff1744;color:#fff;padding:0.6em 1.4em;border-radius:24px;font-weight:800;font-size:1.2rem;z-index:10;box-shadow:0 2px 12px rgba(0,0,0,0.12);display:flex;align-items:center;gap:0.5em;"><span style="font-size:1.3em;"></span> Work in Progress</div>
+                    <img src="assets/project3.svg" alt="Assassins Flutter App">
+                    <div class="project-info">
+                        <div class="info-title">
+                            <h3>Assassins (Flutter App)</h3>
+                        </div>
+                        <div class="info-content">
+                            <p style="font-weight:700;color:#ff1744;">This app is currently under development and not yet available for use.</p>
+                            <p>Assassins is a mobile app (Flutter) for a real-life search & destroy game, inspired by hide and seek and water fights. Teams are assigned a target team and must eliminate them using water pistols or water balloons. The app manages teams, kills, and safe zones, and allows players to report kills with video evidence. Still in development, the app will feature team management, kill registration, and game rules.</p>
+                            <div class="tech-stack">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>Firebase (planned)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn next" aria-label="Next project">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h1 class="contact-title">
+                    <span>G</span><span>E</span><span>T</span>
+                    <span>&nbsp;</span>
+                    <span>I</span><span>N</span>
+                </h1>
+                <h1 class="contact-title touch-title">
+                    <span>T</span><span>O</span><span>U</span><span>C</span><span>H</span>
+                </h1>
+                <div class="contact-description">
+                    <p>Do you think i am suitable for your internship</p>
+                    <div class="contact-email">
+                        <a href="mailto:joranwolfsk@gmail.com">Mail me !</a>
+                    </div>
+                </div>
+            </div>
+           
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     
+    <footer class="footer">
+        <div class="section-divider"></div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Social</h3>
+                <div class="footer-social-links">
+                    <a href="https://www.instagram.com/wolfsjoran" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/joran-wolfs-275221349" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 joranwolfsk. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+
+
+    <script>
+        setTimeout(() => {
+            document.querySelector('.loading-screen').style.display = 'none';
+        }, 2000);
+    </script>
+</body>
+</html>
